@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, WKUIDelegate {
+    let u = "https://kinoafisha.ua/ajax/skoro_load"
+  
+  var webView: WKWebView!
+    
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let myURL = URL(string: u)
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
     }
-
-
 }
-

@@ -13,9 +13,12 @@
 		CEC26B1724E4FEF1006604BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC26B1524E4FEF1006604BC /* Main.storyboard */; };
 		CEC26B1924E4FEF2006604BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC26B1824E4FEF2006604BC /* Assets.xcassets */; };
 		CEC26B1C24E4FEF2006604BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC26B1A24E4FEF2006604BC /* LaunchScreen.storyboard */; };
+		EB270D4B859DA1AB5304A68E /* Pods_KinoAfisha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E507A456A9A969AA492BA5 /* Pods_KinoAfisha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02F728FDEF852C4408ABB680 /* Pods-KinoAfisha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoAfisha.release.xcconfig"; path = "Target Support Files/Pods-KinoAfisha/Pods-KinoAfisha.release.xcconfig"; sourceTree = "<group>"; };
+		64E507A456A9A969AA492BA5 /* Pods_KinoAfisha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinoAfisha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC26B0C24E4FEF1006604BC /* KinoAfisha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoAfisha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC26B0F24E4FEF1006604BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC26B1124E4FEF1006604BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		CEC26B1824E4FEF2006604BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC26B1B24E4FEF2006604BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC26B1D24E4FEF2006604BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2AC7AD44DCBF543B2B41A05 /* Pods-KinoAfisha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoAfisha.debug.xcconfig"; path = "Target Support Files/Pods-KinoAfisha/Pods-KinoAfisha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB270D4B859DA1AB5304A68E /* Pods_KinoAfisha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F5D17E059B379D1739867B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2AC7AD44DCBF543B2B41A05 /* Pods-KinoAfisha.debug.xcconfig */,
+				02F728FDEF852C4408ABB680 /* Pods-KinoAfisha.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9021E6662D083C5A5A80630E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64E507A456A9A969AA492BA5 /* Pods_KinoAfisha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEC26B0324E4FEF1006604BC = {
 			isa = PBXGroup;
 			children = (
 				CEC26B0E24E4FEF1006604BC /* KinoAfisha */,
 				CEC26B0D24E4FEF1006604BC /* Products */,
+				37F5D17E059B379D1739867B /* Pods */,
+				9021E6662D083C5A5A80630E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC26B2024E4FEF2006604BC /* Build configuration list for PBXNativeTarget "KinoAfisha" */;
 			buildPhases = (
+				FF2711311B3FED11B103032F /* [CP] Check Pods Manifest.lock */,
 				CEC26B0824E4FEF1006604BC /* Sources */,
 				CEC26B0924E4FEF1006604BC /* Frameworks */,
 				CEC26B0A24E4FEF1006604BC /* Resources */,
+				278CE905B42FB7572124AF02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		278CE905B42FB7572124AF02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoAfisha/Pods-KinoAfisha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KinoAfisha/Pods-KinoAfisha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KinoAfisha/Pods-KinoAfisha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF2711311B3FED11B103032F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KinoAfisha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEC26B0824E4FEF1006604BC /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		CEC26B2124E4FEF2006604BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2AC7AD44DCBF543B2B41A05 /* Pods-KinoAfisha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		CEC26B2224E4FEF2006604BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F728FDEF852C4408ABB680 /* Pods-KinoAfisha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
